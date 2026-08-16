@@ -23,4 +23,4 @@ def test_health() -> None:
         assert response.status_code == 200
 
     with allure.step("Check response body"):
-        assert response.json() == {"status": "ok"}
+        assert response.json() == {"status": "healthy"}
